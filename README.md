@@ -37,3 +37,21 @@ Além disso, também foi disponibilizado o dicionário de dados:
 | Promo2                           | Indica se a drogaria estava participando da promoção "estendida" (0 = não, 1 = sim) |
 | Promo2Since[Week/Year]           | Semana e ano que a drogaria começou a participar da promoção estendida |
 | PromoInterval                    | Descreve os intervalos que a promoção estendida é iniciada |
+
+# Estratégia da Solução
+Como estratégia para a solução dos problemas apresentados, definimos as seguintes etapas: 
+- **1. Entendimento do Negócio:** nesta etapa inicial, o principal objetivo é compreender o problema de negócio e as necessidades do cliente.
+- **2. Entendimento dos Dados:** aqui, iremos tratar as principais inconsistências encontradas nos dados, também criaremos hipóteses de negócio e realizaremos uma análise detalhada em cada variável. 
+- **3. Engenharia de Atributos:** criaremos novas variáveis a fim de resumir as informações e facilitar o aprendizado dos modelos.
+
+
+- **4. Pré-Processamento dos Dados:** nosso objetivo é preparar os dados para a aplicação dos modelos preditivos. Técnicas como redimensionamento e seleção das melhores variáveis serão aplicadas nessa etapa.
+
+
+- **5. Modelagem Preditiva:** criaremos funções para treinar e avaliar o desempenho de três algoritmos de regressão.
+
+
+- **6. Avaliação dos Modelos**: aqui, iremos comparar o desempenho dos modelos treinados. 
+
+
+- **7. Conclusões Finais:** por fim, entregaremos o resultado final do projeto.

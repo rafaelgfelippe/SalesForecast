@@ -66,12 +66,12 @@ Como estratégia para a solução dos problemas apresentados, definimos as segui
 
 **H1. As unidades deveriam vender mais depois do dia 10 de cada mês.**  
 **Verdadeiro:** as unidades vendem mais após o dia 10 de cada mês.  
-![](reports/figures/H2.png)
+![](figures/H1.png)
 
 **H4. As unidades deveriam vender mais ao longo dos anos.**  
 **Falso:** vemos claramente uma queda no número de vendas ao longo dos anos. 
-![](reports/figures/H9.png)
+![](figures/H4.png)
 
 **H9. As unidades com concorrentes mais próximos deveriam vender menos.**  
 **Falso:** unidades com concorrentes mais próximos vendem mais.
-![](reports/figures/H11.png)
+![](figures/H9.png)

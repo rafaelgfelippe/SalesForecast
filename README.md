@@ -75,3 +75,15 @@ Como estratégia para a solução dos problemas apresentados, definimos as segui
 **H9. As unidades com concorrentes mais próximos deveriam vender menos.**  
 **Falso:** unidades com concorrentes mais próximos vendem mais.
 ![](figures/H9.png)
+
+# Modelagem Preditiva
+
+Os seguintes modelos foram testados:
+
+- Average Model (atual estratégia utilizada pela Rossmann);
+- Regressão Linear (Ridge);
+- Regressão Linear (Lasso);
+- Random Forest Regressor.
+
+# Avaliação dos Modelos
+

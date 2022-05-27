@@ -14,9 +14,7 @@ A Rossmann é uma das maiores redes de drogarias da Europa, com cerca de 56 mil 
 
 Para essa reforma ser possível a equipe de negócios da Rossmann precisaria contar com as previsões de vendas de todas as unidades para as próximas seis semanas, porém, atualmente a previsão de vendas é feita através de uma planilha Excel, considerando apenas a média das vendas, que em muitos casos, resulta em uma previsão muito distante do valor real. Diante disso, a empresa decidiu contratar um cientista de dados para ficar ciente de qual é a melhor solução para o problema.
 
-Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os metódos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão:
-
-**Quanto cada unidade venderá nas próximas seis semanas?**
+Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os metódos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão: **Quanto cada unidade venderá nas próximas seis semanas?**
 
 
 # Dicionário de Dados
@@ -48,11 +46,12 @@ Além disso, também foi disponibilizado o dicionário de dados:
 | PromoInterval                    | Descreve os intervalos que a promoção estendida é iniciada |
 
 # Estratégia da Solução
+
 Como estratégia para a solução dos problemas apresentados, definimos as seguintes etapas: 
 - **1. Entendimento do Negócio:** nesta etapa inicial, o principal objetivo é compreender o problema de negócio e as necessidades do cliente.
-- 
+
 - **2. Entendimento dos Dados:** aqui, iremos tratar as principais inconsistências encontradas nos dados, também criaremos hipóteses de negócio e realizaremos uma análise detalhada em cada variável. 
-- 
+
 - **3. Engenharia de Atributos:** criaremos novas variáveis a fim de resumir as informações e facilitar o aprendizado dos modelos.
 
 - **4. Pré-Processamento dos Dados:** nosso objetivo é preparar os dados para a aplicação dos modelos preditivos. Técnicas como redimensionamento e seleção das melhores variáveis serão aplicadas nessa etapa.

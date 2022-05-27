@@ -130,10 +130,13 @@ Como próximo passo para o projeto, poderíamos iniciar um segundo ciclo buscand
 
 Possíveis pontos para serem abordados no segundo ciclo:
 
-Trabalhar com os dados NA de maneira diferente;
-Rescaling e Encode dos dados com metodologias diferentes;
-Trabalhar com novas Features para a previsão.
-Otimizar o modelo, realizando a busca pelos melhores hiperparâmetros.
+- Trabalhar com os dados NA de maneira diferente;
+
+- Rescaling e Encode dos dados com metodologias diferentes;
+
+- Trabalhar com novas Features para a previsão;
+
+-Otimizar o modelo, realizando a busca pelos melhores hiperparâmetros.
 
 # Autor
 

@@ -125,8 +125,6 @@ Por fim, a tabela abaixo mostra a soma das previsões de vendas de todas as loja
 |BestScenario    |	$292,446,479.29 |
 
 # Conclusões Finais
-Podemos compreender que por mais simples que o modelo baseado em médias seja, ainda assim é um modelo coerente e coeso, embora ele não consiga analisar as oscilções de cada unidade, continua sendo uma opção dentro do leque das soluções.
-
 Para um primeiro ciclo, o modelo RandomForestRegressor apresentou um resultado dentro da faixa do aceitavel, embora algumas unidades se apresentaram difíceis de terem o comportamento previsto apresentando o MAPE entre 0.30 a 0.60, esse primeiro resultado seria apresentado para a empresa, a fim de informar o andamento do projeto e o que já se tem como solução.
 
 Como próximo passo para o projeto, poderíamos iniciar um segundo ciclo buscando abordagens diferentes, tendo em vista principalmente as unidades com comportamento difíceis de serem previsto.
@@ -137,3 +135,9 @@ Trabalhar com os dados NA de maneira diferente;
 Rescaling e Encode dos dados com metodologias diferentes;
 Trabalhar com novas Features para a previsão.
 Otimizar o modelo, realizando a busca pelos melhores hiperparâmetros.
+
+# Autor
+
+Rafael Felippe  
+
+[<img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>](https://www.linkedin.com/in/rafaelfelippe/)

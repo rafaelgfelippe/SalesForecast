@@ -4,8 +4,6 @@ Este é um projeto de regressão.
 
 O conjunto de dados utilizado está disponível [neste link](https://www.kaggle.com/c/rossmann-store-sales). 
 
-Uma apresentação em PowerPoint abordando as principais etapas do projeto está disponível [neste link](https://show.zohopublic.com/publish/8ulnq1503aa16c77f43a980e358d241332809).
-
 [![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 # Entendimento do Negócio

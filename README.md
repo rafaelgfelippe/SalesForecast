@@ -80,7 +80,6 @@ Como estratégia para a solução dos problemas apresentados, definimos as segui
 
 Os seguintes modelos foram testados:
 
-- Average Model (atual estratégia utilizada pela Rossmann);
 - Regressão Linear (Ridge);
 - Regressão Linear (Lasso);
 - Random Forest Regressor.
@@ -100,9 +99,9 @@ O modelo RandomForestRegressor foi o que apresentou o melhor desempenho.
 
 - **MAE**: o modelo apresenta em média um valor de erro de $853.
 - **MAPE**: esse erro médio representa 11.7%, ou seja, para cada valor predito do modelo ele pode subestimar ou superestimar o resultado em 11.7%.
-- **RMSE**: apresenta um erro médio de 1278 unidades, sendo que ela é mais sensível a outliers e com isso, se essa métrica estiver bastante discrepante da MAE, outros ajustes nos dados devem ser feitos. No entanto, a RMSE foi utilizada como métrica de melhoria para o modelo e foi considerada satisfatória.
+
  
-A tabela abaixo mostra as piores previsões para respectiva unidade atingindo até 59% de margem de erro (MAPE), explicando que algumas unidades são mais desafiadoras de se prever. O campo worst_scenario é calculado subtraindo o MAE do campo de previsões e o campo best_scenario é calculado adicionando o campo MAE.  
+A tabela abaixo mostra as piores previsões para respectiva unidade atingindo até 59% de margem de erro (MAPE), explicando que algumas unidades são mais desafiadoras de se prever. 
 
 |   Store |   Predictions |   WorstScenario  |   BestScenario  |      MAE |     MAPE |
 |--------:|--------------:|-----------------:|----------------:|---------:|---------:|

@@ -12,7 +12,9 @@ A Rossmann é uma das maiores redes de drogarias da Europa, com cerca de 56 mil 
 
 Para essa reforma ser possível a equipe de negócios da Rossmann precisaria contar com as previsões de vendas de todas as unidades para as próximas seis semanas, porém, atualmente a previsão de vendas é feita através de uma planilha Excel, considerando apenas a média das vendas, que em muitos casos, resulta em uma previsão muito distante do valor real. Diante disso, a empresa decidiu contratar um cientista de dados para ficar ciente de qual é a melhor solução para o problema.
 
-Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os metódos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão: **Quanto cada unidade venderá nas próximas seis semanas?**
+Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os metódos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão: 
+
+- **Quanto cada unidade venderá nas próximas seis semanas?**
 
 
 # Dicionário de Dados
@@ -21,7 +23,7 @@ As seguintes suposições foram feitas sobre o problema de negócio:
 - Os dados estão em formato estruturado e serão disponibilizados em arquivos "csv".
 - Os dias em que as unidades estiveram fechadas serão removidos da análise.
 - Apenas unidades com valores de vendas maiores que zero serão consideradas.
-- Para as unidades que não possuirem a informação da distância do concorrente mais próximo (CompetitionDistance), iremos considerar um valor bem acima dos observados.
+- Para as unidades que não possuirem a informação da distância do concorrente mais próximo (**`CompetitionDistance`**), iremos considerar um valor bem acima dos observados.
 
 Além disso, também foi disponibilizado o dicionário de dados:
 
@@ -46,6 +48,7 @@ Além disso, também foi disponibilizado o dicionário de dados:
 # Estratégia da Solução
 
 Como estratégia para a solução dos problemas apresentados, definimos as seguintes etapas: 
+
 - **1. Entendimento do Negócio:** nesta etapa inicial, o principal objetivo é compreender o problema de negócio e as necessidades do cliente.
 
 - **2. Entendimento dos Dados:** aqui, iremos tratar as principais inconsistências encontradas nos dados, também criaremos hipóteses de negócio e realizaremos uma análise detalhada em cada variável. 
@@ -78,13 +81,13 @@ Como estratégia para a solução dos problemas apresentados, definimos as segui
 
 Os seguintes modelos foram testados:
 
-- Regressão Linear (Ridge);
-- Regressão Linear (Lasso);
-- Random Forest Regressor.
+- Regressão Linear (*Ridge*);
+- Regressão Linear (*Lasso*);
+- *RandomForestRegressor*.
 
 # Avaliação dos Modelos
 
-De modo a respeitar a ordem cronológica dos dados, foi utilizada a técnica de Time Series Cross-Validation para cada modelo, avaliando o Erro Médio Absoluto (MAE), o Erro Médio Absoluto Porcentagem (MAPE) e o Erro Quadrático Médio Raiz (RMSE).    
+De modo a respeitar a ordem cronológica dos dados, foi utilizada a técnica de *Time Series Cross-Validation* para cada modelo, avaliando o Erro Médio Absoluto (MAE), o Erro Médio Absoluto Porcentagem (MAPE) e o Erro Quadrático Médio Raiz (RMSE).    
 A performance real dos modelos é dada pela média dos erros +/- o desvio padrão do erro, representados na tabela abaixo:  
 
 |    Modelo            |     MAE CV      |    MAPE CV    |     RMSE CV       |
@@ -93,7 +96,7 @@ A performance real dos modelos é dada pela média dos erros +/- o desvio padrã
 | Linear Regression	          | 2108.99 +/- 335.01	| 29.82 +/- 1.86	| 3013.54 +/- 519.62 |
 | Linear Regression - Lasso	  | 2130.05 +/- 367.59	| 29.56 +/- 1.25  | 3066.85 +/- 548.48 |
 
-O modelo RandomForestRegressor foi o que apresentou o melhor desempenho.
+O modelo *RandomForestRegressor* foi o que apresentou o melhor desempenho.
 
 - **MAE**: o modelo apresenta em média um valor de erro de $853.
 - **MAPE**: esse erro médio representa 11.7%, ou seja, para cada valor predito do modelo ele pode subestimar ou superestimar o resultado em 11.7%.
@@ -122,15 +125,16 @@ Por fim, a tabela abaixo mostra a soma das previsões de vendas de todas as loja
 |BestScenario    |	$292,446,479.29 |
 
 # Conclusões Finais
-Para um primeiro ciclo, o modelo RandomForestRegressor apresentou um resultado dentro da faixa do aceitavel, embora algumas unidades se apresentaram difíceis de terem o comportamento previsto apresentando o MAPE entre 0.30 a 0.60, esse primeiro resultado seria apresentado para a empresa, a fim de informar o andamento do projeto e o que já se tem como solução.
+
+Para um primeiro ciclo, o modelo *RandomForestRegressor* apresentou um resultado dentro da faixa do aceitavel, embora algumas unidades se apresentaram difíceis de terem o comportamento previsto apresentando o MAPE entre 0.30 a 0.60, esse primeiro resultado seria apresentado para a empresa, a fim de informar o andamento do projeto e o que já se tem como solução.
 
 Como próximo passo para o projeto, poderíamos iniciar um segundo ciclo buscando abordagens diferentes, tendo em vista principalmente as unidades com comportamento difíceis de serem previsto.
 
 Possíveis pontos para serem abordados no segundo ciclo:
 
 - Trabalhar com os dados NA de maneira diferente;
-- Rescaling e Encode dos dados com metodologias diferentes;
-- Trabalhar com novas Features para a previsão;
+- *Rescaling* e *Encode* dos dados com metodologias diferentes;
+- Trabalhar com novas *Features* para a previsão;
 - Otimizar o modelo, realizando a busca pelos melhores hiperparâmetros.
 
 # Autor

@@ -87,8 +87,7 @@ Os seguintes modelos foram testados:
 
 # Avaliação dos Modelos
 
-De modo a respeitar a ordem cronológica dos dados, foi utilizada a técnica de *Time Series Cross-Validation* para cada modelo, avaliando o Erro Médio Absoluto (MAE), o Erro Médio Absoluto Porcentagem (MAPE) e o Erro Quadrático Médio Raiz (RMSE).    
-A performance real dos modelos é dada pela média dos erros +/- o desvio padrão do erro, representados na tabela abaixo:  
+De modo a respeitar a ordem cronológica dos dados, foi utilizada a técnica de *Time Series Cross-Validation* para cada modelo, avaliando o Erro Médio Absoluto (MAE), o Erro Médio Absoluto Porcentagem (MAPE) e o Erro Quadrático Médio Raiz (RMSE). A performance real dos modelos é dada pela média dos erros +/- o desvio padrão do erro, representados na tabela abaixo:  
 
 |    Modelo            |     MAE CV      |    MAPE CV    |     RMSE CV       |
 |:--------------------:|:---------------:|:-------------:|:-----------------:|

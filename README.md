@@ -12,7 +12,7 @@ A Rossmann é uma das maiores redes de drogarias da Europa, com cerca de 56 mil 
 
 Para essa reforma ser possível a equipe de negócios da Rossmann precisaria contar com as previsões de vendas de todas as unidades para as próximas seis semanas, porém, atualmente a previsão de vendas é feita através de uma planilha Excel, considerando apenas a média das vendas, que em muitos casos, resulta em uma previsão muito distante do valor real. Diante disso, a empresa decidiu contratar um cientista de dados para ficar ciente de qual é a melhor solução para o problema.
 
-Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os metódos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão: 
+Durante a reunião de negócios, o cientista de dados explicou os detalhes de uma previsão de vendas, bem como os métodos que poderiam ser utilizados. Ao final da reunião, ficou a cargo do cientista de dados montar um modelo de previsão de vendas para responder a seguinte questão: 
 
 - **Quanto cada unidade venderá nas próximas seis semanas?**
 
@@ -23,7 +23,7 @@ As seguintes suposições foram feitas sobre o problema de negócio:
 - Os dados estão em formato estruturado e serão disponibilizados em arquivos "csv".
 - Os dias em que as unidades estiveram fechadas serão removidos da análise.
 - Apenas unidades com valores de vendas maiores que zero serão consideradas.
-- Para as unidades que não possuirem a informação da distância do concorrente mais próximo (**`CompetitionDistance`**), iremos considerar um valor bem acima dos observados.
+- Para as unidades que não possuírem a informação da distância do concorrente mais próximo (**`CompetitionDistance`**), iremos considerar um valor bem acima dos observados.
 
 Além disso, também foi disponibilizado o dicionário de dados:
 
@@ -37,7 +37,7 @@ Além disso, também foi disponibilizado o dicionário de dados:
 | Open                             | Indica se a drogaria estava trabalhando no dia (0 = não, 1 = sim) |
 | Promo                            | Indica se a drogaria estava participando da promoção "normal" |
 | StateHoliday                     | Indica se a unidade trabalha durante os feriados |
-| SchoolHoliday                    | Indica se a data do registro era epóca de férias escolares  |
+| SchoolHoliday                    | Indica se a data do registro era época de férias escolares  |
 | Assortment                       | Nível de sortimento de produtos da unidade (a, b, c) |
 | CompetitionDistance              | Distância em metros da unidade do concorrente mais próximo |
 | CompetitionOpenSince[Month/Year] | Ano e mês em que o concorrente mais próximo foi inaugurado |
@@ -125,7 +125,7 @@ Por fim, a tabela abaixo mostra a soma das previsões de vendas de todas as loja
 
 # Conclusões Finais
 
-Para um primeiro ciclo, o modelo *RandomForestRegressor* apresentou um resultado dentro da faixa do aceitavel, embora algumas unidades se apresentaram difíceis de terem o comportamento previsto apresentando o MAPE entre 0.30 a 0.60, esse primeiro resultado seria apresentado para a empresa, a fim de informar o andamento do projeto e o que já se tem como solução.
+Para um primeiro ciclo, o modelo *RandomForestRegressor* apresentou um resultado dentro da faixa do aceitável, embora algumas unidades se apresentaram difíceis de terem o comportamento previsto apresentando o MAPE entre 0.30 a 0.60, esse primeiro resultado seria apresentado para a empresa, a fim de informar o andamento do projeto e o que já se tem como solução.
 
 Como próximo passo para o projeto, poderíamos iniciar um segundo ciclo buscando abordagens diferentes, tendo em vista principalmente as unidades com comportamento difíceis de serem previsto.
 
